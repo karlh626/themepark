@@ -12,22 +12,31 @@ A ticket is in the entrance. "A ticket."  The description is "Oops, you must hav
 
 Attendant is a man in the entrance.  The description is "The gate employee looks bored out of his mind... if he has a mind.  He is wearing a flashy park vest with a name tag saying, 'Charles'."
 
-Understand "ticket", "the ticket", "turn stile", "turn", "stile", and "park" as "[ticket]".
+Understand "ticket", "tickets", "the ticket", "turn stile", "turn", "stile", and "park" as "[ticket]".
 
 Instead of asking Attendant about "[ticket]":
-    say "You need to give me your ticket to get in."
+	say "'You need to give me your ticket to get in' the Attendant announces."
+
+Instead of asking Attendant about anything:
+	say "The young man looks bewildered, 'I dunno.  You will have to call the info line at 1-800-555-PARK.'"
+
+Understand "Charles" and "charles" as Attendant.
 
 Instead of giving the ticket to Attendant:
-    say "Thank you. Please walk through to the north.";
+    say "'Thank you. Welcome to the park', the Attendant smiles.";
     now the turn stile is unlocked;
+	say "You push against the turn stile bars until it ratchets you through to the other side.";
+	move player to Skyride;
     remove the ticket from play.
 
 Instead of going north:
-    if player has the ticket: 
+	if player has the ticket: 
 		say "'Give me the Ticket please!', the Attendant demands.";
-    otherwise:
-		say "'You can't get in without a ticket', the Attendant snickers."
+		stop the action.;
+	otherwise:
+		say "'You can't get in without a ticket', the Attendant snickers.";
+		stop the action.
 
 The turn stile is a door.  The turn stile is scenery.  The description is "The turn stile blocks the entry to the park unless you have a ticket."  The turn stile is north of the entrance and south of the SkyRide.  The turn stile is lockable and locked.  The ticket unlocks the turn stile.
 
-
+The description of the Skyride is "The area of the park just inside the gate."
