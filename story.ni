@@ -22,6 +22,12 @@ Instead of giving the ticket to Attendant:
     now the turn stile is unlocked;
     remove the ticket from play.
 
+Instead of going north:
+    if player has the ticket: 
+		say "'Give me the Ticket please!', the Attendant demands.";
+    otherwise:
+		say "'You can't get in without a ticket', the Attendant snickers."
+
 The turn stile is a door.  The turn stile is scenery.  The description is "The turn stile blocks the entry to the park unless you have a ticket."  The turn stile is north of the entrance and south of the SkyRide.  The turn stile is lockable and locked.  The ticket unlocks the turn stile.
 
 
