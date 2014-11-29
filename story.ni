@@ -29,7 +29,7 @@ Instead of giving the ticket to Attendant:
 	move player to Skyride;
     remove the ticket from play.
 
-Instead of going north:
+Instead of going north from entrance:
 	if player has the ticket: 
 		say "'Give me the Ticket please!', the Attendant demands.";
 		stop the action.;
@@ -39,4 +39,10 @@ Instead of going north:
 
 The turn stile is a door.  The turn stile is scenery.  The description is "The turn stile blocks the entry to the park unless you have a ticket."  The turn stile is north of the entrance and south of the SkyRide.  The turn stile is lockable and locked.  The ticket unlocks the turn stile.
 
-The description of the Skyride is "The area of the park just inside the gate."
+The description of the Skyride is "The skyride is a cable car system that takes you from the park entrance to the center of the park by way of a box hanging from a cable high above the pedestrians below.  You can also make a return trip if you like back to the park entrance.  To get on the cable car, you have to wait in the line that forms on the steps up to the second floor where you can get on or off the cable car."
+
+The Skyride2 is above the Skyride. The printed name of Skyride2 is "Second Floor".
+
+Instead of going up from Skyride:
+	say "A gate blocks the way to the stairs and has a sign, 'Ride temporarily closed'.";
+	stop the action.
