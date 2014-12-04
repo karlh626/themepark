@@ -58,3 +58,11 @@ Instead of waiting in Skyride:
 The South Avenue is north of the Skyride.  The description of the South Avenue is "This lane is wide enough for a large crowd of people to walk through as well as stand and watch the ride on the west side and stand in line to get food at the shops to the east.  The lane continues to the north passing more rides".
 
 The Painted Dragon is west of the South Avenue.  ["Green metal rails climb high above and then plunge downward to the ground promising an adreneline rush before spinning you around two consecuative loops."]  The description of the Painted Dragon is "The impressive image of the colorful coaster racing along the track carrying screaming riders always draws a line of people eager for a rush right after entering the park".
+
+The description of the Skyride is "The skyride is a cable car system that takes you from the park entrance to the center of the park by way of a box hanging from a cable high above the pedestrians below.  You can also make a return trip if you like back to the park entrance.  To get on the cable car, you have to wait in the line that forms on the steps up to the second floor where you can get on or off the cable car."
+
+The Skyride2 is above the Skyride. The printed name of Skyride2 is "Second Floor".
+
+Instead of going up from Skyride:
+	say "A gate blocks the way to the stairs and has a sign, 'Ride temporarily closed'.";
+	stop the action.
