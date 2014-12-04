@@ -41,7 +41,7 @@ The turn stile is a door.  The turn stile is scenery.  The description is "The t
 
 The description of the Skyride is "The skyride is a cable car system that takes you from the park entrance to the center of the park by way of a box or gondola hanging from a cable high above the pedestrians below.  You can also make a return trip if you like back to the park entrance.  To get on the cable car, you have to wait in the line that forms on the steps up to the second floor where you can get on or off the cable car.  You can also walk around the skyride to the north to see the rest of the park."
 
-The Skyride2 is above the Skyride. The printed name of Skyride2 is "Second Floor".  The description of Skyride2 is "At the top of the stairs is a room containing an overhead track that enters through a large opening in the wall, curves around and exits through another similar opening.  Attendants hold the door to the gondolas open and urge passengers to disembark quickly so the next waiting passenger can get in and be sent on their way".
+The SkyrideII is above the Skyride. The printed name of SkyrideII is "Second Floor".  The description of SkyrideII is "At the top of the stairs is a room containing an overhead track that enters through a large opening in the wall, curves around and exits through another similar opening.  Attendants hold the door to the gondolas open and urge passengers to disembark quickly so the next waiting passenger can get in and be sent on their way".
 
 Inside from Second Floor is Skycar.  The printed name of the Skycar is "ride".
 
@@ -51,7 +51,7 @@ Instead of going up from Skyride:
 	
 Instead of waiting in Skyride:
 	say "After deciding to wait, the line finally starts moving again and you arive at the top of the stairs.";
-	move the player to Skyride2.
+	move the player to SkyrideII.
 	
 [Understand "car" or "box" or "coaster" as ride.]
 
@@ -59,9 +59,7 @@ The South Avenue is north of the Skyride.  The description of the South Avenue i
 
 The Painted Dragon is west of the South Avenue.  ["Green metal rails climb high above and then plunge downward to the ground promising an adreneline rush before spinning you around two consecuative loops."]  The description of the Painted Dragon is "The impressive image of the colorful coaster racing along the track carrying screaming riders always draws a line of people eager for a rush right after entering the park".
 
-The description of the Skyride is "The skyride is a cable car system that takes you from the park entrance to the center of the park by way of a box hanging from a cable high above the pedestrians below.  You can also make a return trip if you like back to the park entrance.  To get on the cable car, you have to wait in the line that forms on the steps up to the second floor where you can get on or off the cable car."
-
-The Skyride2 is above the Skyride. The printed name of Skyride2 is "Second Floor".
+The SkyrideII is above the Skyride. The printed name of SkyrideII is "Second Floor".
 
 Instead of going up from Skyride:
 	say "A gate blocks the way to the stairs and has a sign, 'Ride temporarily closed'.";
