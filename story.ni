@@ -41,17 +41,22 @@ The turn stile is a door.  The turn stile is scenery.  The description is "The t
 
 The description of the Skyride is "The skyride is a cable car system that takes you from the park entrance to the center of the park by way of a box or gondola hanging from a cable high above the pedestrians below.  You can also make a return trip if you like back to the park entrance.  To get on the cable car, you have to wait in the line that forms on the steps up to the second floor where you can get on or off the cable car.  You can also walk around the skyride to the north to see the rest of the park."
 
-The SkyrideII is above the Skyride. The printed name of SkyrideII is "Second Floor".  The description of SkyrideII is "At the top of the stairs is a room containing an overhead track that enters through a large opening in the wall, curves around and exits through another similar opening.  Attendants hold the door to the gondolas open and urge passengers to disembark quickly so the next waiting passenger can get in and be sent on their way".
+The Skyride2 is above the Skyride. The printed name of Skyride2 is "Second Floor".  The description of Skyride2 is "At the top of the stairs is a room containing an overhead track that enters through a large opening in the wall, curves around and exits through another similar opening.  Attendants hold the door to the gondolas open and urge passengers to disembark quickly so the next waiting passenger can get in and be sent on their way".
 
-Inside from Second Floor is Skycar.  The printed name of the Skycar is "ride".
+The Skycar is a vehicle inside Skyride2.  The printed name of the Skycar is "car".  "The workers here are hurrying new arrivals out of the gondolas and gesturing for the people at the head of the line to get in so they can lock the door and send them on their way."
+
+After entering the skycar:
+	say "After settling down on the bench, the safety lock clicks and you are jerked into motion.  As the car exits the platform, the swinging stops and the car begins the trip above the crowds below.  Looking down below you see a small group waving up at you.  Looking out you can see the Painted Dragon Roller coaster and on the other side of the car you can the ferris wheel slowly turning.  Soon you see the north skyride platform approaching.";
+	say "As the skycar bumps to a stop inside the platform, the worker unlocks the safety latch and opens the door.";
+	now the skycar is in north platform.
 
 Instead of going up from Skyride:
-	say "After getting in line, the progress up the stairs seems to halt.  Do you want to wait in line'.";
+	say "After getting in line, the progress up the stairs seems to halt.  Do you want to [bold type]wait[roman type] in line'.";
 	stop the action.
 	
 Instead of waiting in Skyride:
 	say "After deciding to wait, the line finally starts moving again and you arive at the top of the stairs.";
-	move the player to SkyrideII.
+	move the player to Skyride2.
 	
 [Understand "car" or "box" or "coaster" as ride.]
 
@@ -59,8 +64,44 @@ The South Avenue is north of the Skyride.  The description of the South Avenue i
 
 The Painted Dragon is west of the South Avenue.  ["Green metal rails climb high above and then plunge downward to the ground promising an adreneline rush before spinning you around two consecuative loops."]  The description of the Painted Dragon is "The impressive image of the colorful coaster racing along the track carrying screaming riders always draws a line of people eager for a rush right after entering the park".
 
-The SkyrideII is above the Skyride. The printed name of SkyrideII is "Second Floor".
+The Center Park is north of South Avenue.  "A fountain, surrounded by benches and flowers, shoots streams of water into the air."
 
-Instead of going up from Skyride:
-	say "A gate blocks the way to the stairs and has a sign, 'Ride temporarily closed'.";
-	stop the action.
+The North Avenue is north of Center Park.
+
+The North Skride is north of North Avenue.  "Stairs lead to a room above where the skyride cars enter from the south above and leave heading back to the park entrance.  Although the skyride is faster than walking, with the wait in line, you wonder which really is faster?"
+
+The north platform is above the north skyride.
+
+The West Park is west of Center Park.
+
+The East Park is east of Center Park.
+
+The Food Park is east of East Park.  "Picnic tables here are surrounded by shops which sell everything from burgers and hotdogs to slurpies and shakes.  Every type of fried food imaginable seems to be available here."
+
+Bayside Rails is east of Food Park.  "This small train depot is less used due to fewer attractions on the east side.  A ticket window is right under a round clock which shows the time as [the time of day to the nearest 5 minutes in words].  There are no benches here but the picnic tables to the west can be used for sitting down while waiting."
+
+The bayside rails schedule is in the Bayside Rails.  The description of bayside rails schedule is "Arrivals             Departure[line break]---------------------------------[line break]12:30pm          12:35[line break]1:30                 1:35[line break]2:30                 2:35[line break]3:30                 3:35[line break]4:30                 4:35[line break]5:30                 5:35[line break]6:30                 6:35[line break]7:30                 7:35[line break]8:30                 8:35[line break]9:30                 9:35[line break]10:30               10:35[line break]11:30pm          11:35[line break]"
+
+Shoreville Depot is west of West Park.  "Several benches are lined up under a roof that extends from the ticket office which is a very small room with two windows that face the benches for selling tickets and the other which allows the worker to view the tracks.  Above the ticket window a large clock shows the time as [the time of day to the nearest five minutes in words].  A sheet of paper beside the window shows the schedule."
+
+The shoreville schedule is in the Shoreville Depot.  The description of shoreville schedule is "Arrivals             Departure[line break]---------------------------------[line break]12:00pm          12:05[line break]1:00                 1:05[line break]2:00                 2:05[line break]3:00                 3:05[line break]4:00                 4:05[line break]5:00                 5:05[line break]6:00                 6:05[line break]7:00                 7:05[line break]8:00                 8:05[line break]9:00                 9:00[line break]10:00               10:05[line break]11:00pm[line break]"
+
+Kid Town is east of South Avenue.
+
+Merry Go Round is east of Kid Town.
+
+Bumber Cars is south of Kid Town.
+
+Painted Dragon is south of West Park.
+
+Old West Town is northeast of Shoreville Depot.
+
+North Avenue is east of Old West Town.
+
+Rocket Ship is east of North Avenue;
+
+East Park is south of Rocket Ship.
+
+Ferris Wheel is north of Food Park.  "Looking up, this the tallest ride in the park and can be seen for miles around.  This does not have the thrills the belong to other rides but this a perfect ride to go on with your sweet heart after fun day on the other rides."
+
+Water Park is west of Skyride. "The sounds and sights of falling and splashing water are everywhere.  The pavement underfoot is wet from the water slide spray coming from the south."
